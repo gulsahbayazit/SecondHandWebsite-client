@@ -15,6 +15,7 @@ function SignupPage(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState(undefined);
+  const APIURL = process.env.REACT_APP_API_URL;
 
   const navigate = useNavigate();
 
@@ -40,7 +41,7 @@ function SignupPage(props) {
     };
 
     axios
-      .post("http://127.0.0.1:5005/auth/signup", requestBody)
+      .post(`${APIURL}/auth/signup`, requestBody)
       .then((response) => {
         navigate("/signup-info");
       })

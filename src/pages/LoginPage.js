@@ -12,6 +12,7 @@ function LoginPage(props) {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState(undefined);
   const navigate = useNavigate();
+  const APIURL = process.env.REACT_APP_API_URL;
 
   const { storeToken, authenticateUser } = useContext(AuthContext);
 
@@ -22,7 +23,7 @@ function LoginPage(props) {
     const requestBody = { email, password };
 
     axios
-      .post("http://127.0.0.1:5005/auth/login", requestBody)
+      .post(`${APIURL}/auth/login`, requestBody)
       .then((response) => {
         console.log(response);
         console.log("JWT token", response.data.authToken);
