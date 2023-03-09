@@ -7,7 +7,7 @@ function DisplayFormButton({ product, user, fetchUpdatedUser }) {
   const [buyerName, setBuyerName] = useState("");
   const [message, setMessage] = useState(undefined);
   const navigate = useNavigate();
-  const APIURL = "http://127.0.0.1:5005";
+  const APIURL = process.env.REACT_APP_API_URL;
   const storedToken = localStorage.getItem("authToken");
 
   const handleClick = () => {

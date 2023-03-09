@@ -8,7 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import addproduct from "../images/addproduct.jpg";
-const APIURL = "http://127.0.0.1:5005";
+const APIURL = process.env.REACT_APP_API_URL;
 
 function AddProductPage(props) {
   const { user } = useContext(AuthContext);

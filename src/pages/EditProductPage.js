@@ -15,7 +15,7 @@ function EditProductPage(props) {
   const [imageUrl, setImageUrl] = useState("");
   const [postcode, setPostcode] = useState("");
   const [address, setAddress] = useState("");
-  const APIURL = "http://127.0.0.1:5005";
+  const APIURL = process.env.REACT_APP_API_URL;
   const storedToken = localStorage.getItem("authToken");
 
   const navigate = useNavigate();

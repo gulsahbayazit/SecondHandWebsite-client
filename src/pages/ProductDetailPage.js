@@ -8,7 +8,7 @@ function ProductDetailPage() {
   const [product, setProduct] = useState(null);
   const { id } = useParams();
 
-  const APIURL = "http://127.0.0.1:5005";
+  const APIURL = process.env.REACT_APP_API_URL;
   const getProduct = () => {
     const storedToken = localStorage.getItem("authToken");
     axios

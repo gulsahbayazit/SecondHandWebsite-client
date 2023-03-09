@@ -10,7 +10,7 @@ import { AuthContext } from "../context/auth.context";
 function ProfilePage() {
   const [products, setProducts] = useState([]);
   const [query, setQuery] = useState("");
-  const APIURL = "http://127.0.0.1:5005";
+  const APIURL = process.env.REACT_APP_API_URL;
   const { user, authenticateUser } = useContext(AuthContext);
   const [updatedUser, setUpdatedUser] = useState([]);
 

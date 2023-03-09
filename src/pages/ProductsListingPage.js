@@ -7,7 +7,7 @@ import "../App.css";
 function ProductListingPage({ setString, string }) {
   const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);
-  const APIURL = "http://127.0.0.1:5005";
+  const APIURL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const storedToken = localStorage.getItem("authToken");
