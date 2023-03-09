@@ -154,14 +154,15 @@ function EditProductPage(props) {
             </div>
             <div className="col d-grid gap-2">
               <div className="d-flex justify-content-center ">
-                <button
-                  className="btn btn-danger custom-button mx-3"
-                  type="submit"
-                  // onClick={updateProduct}
-                >
-                  Update Product
-                </button>
-
+                <Link to="/profile">
+                  <button
+                    className="btn btn-danger custom-button mx-3"
+                    type="submit"
+                    // onClick={updateProduct}
+                  >
+                    Update Product
+                  </button>
+                </Link>
                 <Link to="/profile">
                   <button
                     style={{ backgroundColor: "#fe7e6d" }}
