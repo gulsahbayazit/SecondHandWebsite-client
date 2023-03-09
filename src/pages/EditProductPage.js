@@ -34,7 +34,7 @@ function EditProductPage(props) {
         setDescription(oneProduct.description);
         setPostcode(oneProduct.postcode);
         setAddress(oneProduct.address);
-
+        setPrice(oneProduct.price);
         setImageUrl(oneProduct.imageUrl);
       })
       .catch((error) => console.log(error));
@@ -46,7 +46,15 @@ function EditProductPage(props) {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    const requestBody = { title, description, price };
+    const requestBody = {
+      title,
+      condition,
+      description,
+      postcode,
+      address,
+      price,
+      imageUrl,
+    };
 
     axios
       .put(`${APIURL}/products/${id}`, requestBody, {

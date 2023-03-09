@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import ProductCard from "../components/ProductCard";
@@ -62,10 +61,6 @@ function ProfilePage() {
           </button>
         </Link>
       </div>
-      {/* <h5>{user.firstName}</h5>
-      <h5>{user.lastName}</h5>
-      <h5>{user.contactInfo}</h5>
-      <h5>{user.email}</h5> */}
 
       <div className="product-cards-container">
         {products.map((product, i) => (
