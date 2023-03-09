@@ -1,0 +1,21 @@
+/* Footer Page */
+footer {
+  bottom: 0;
+  width: 100%;
+  margin-top: 4rem;
+  position: end;
+}
+.container {
+  padding: 0.6rem;
+}
+.footer-orange {
+  background-color: #fe7e6d;
+}
+.footer-lila {
+  background-color: #2f3a8f;
+  color: #ffffff;
+}
+
+.footer-p {
+  font-size: 0.8rem;
+}

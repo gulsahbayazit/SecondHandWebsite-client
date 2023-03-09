@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  font-family: "Epilogue", sans-serif;
+  color: #212427;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  height: 4rem;
+  width: auto;
+  margin-right: 1rem;
+  margin-top: -1.8rem;
+}
+
+.navbar__toggle {
+  display: none;
+  margin-left: auto;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  margin-left: 20px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar__link:hover {
+  text-decoration: none;
+  color: #5b5959;
+  font-weight: 600;
+}
+
+.navbar__search {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar__search-input {
+  padding: 2px 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.navbar__search-button {
+  background-color: #fff;
+}
