@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import authService from "./../services/auth.service";
 import axios from "axios";
 import signup from "../images/signup.jpg";
 import Button from "react-bootstrap/Button";

@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import about from "../images/about.jpg";
 import "../App.css";
-// import NavbarWithoutSearch from "./components/NavbarWithoutSearch";
 
 function AboutPage() {
   return (

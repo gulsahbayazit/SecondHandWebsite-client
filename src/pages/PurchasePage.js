@@ -1,5 +1,4 @@
 import kon from "../images/kon.png";
-import koko from "../images/koko.jpeg";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 

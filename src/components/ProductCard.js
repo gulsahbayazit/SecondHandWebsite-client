@@ -3,10 +3,6 @@ import "../App.css";
 import { useLocation } from "react-router-dom";
 
 function ProductCard({ imageUrl, title, price, category }) {
-  // const [user, setUser] = useState("");
-  // const email = user.email;
-  // const region = user.region;
-
   return (
     <Card className="product-card" style={{ width: "18rem" }}>
       <Card.Img

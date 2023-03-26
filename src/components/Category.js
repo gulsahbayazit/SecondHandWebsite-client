@@ -1,5 +1,4 @@
-import { useState, useContext } from "react";
-import axios from "axios";
+import { useState } from "react";
 
 function Category(props) {
   const [category, setCategory] = useState("");
@@ -99,45 +98,3 @@ function Category(props) {
 }
 
 export default Category;
-
-// import React from 'react';
-// import { Dropdown } from 'react-bootstrap';
-
-// const categories = [
-//   { id: 1, name: 'Furniture' },
-//   { id: 2, name: 'Home Decor' },
-//   { id: 3, name: 'Lighting' },
-//   { id: 4, name: 'Outdoor' },
-//   { id: 5, name: 'Textiles' },
-// ];
-
-// const DropdownCategory = () => {
-//   const [selectedCategory, setSelectedCategory] = useState('All Categories');
-
-//   const handleCategorySelect = (category) => {
-//     setSelectedCategory(category.name);
-//     // Add additional logic here to filter items based on category selection
-//   };
-
-//   return (
-//     <Dropdown>
-//       <Dropdown.Toggle variant="secondary" id="dropdown-category">
-//         {selectedCategory}
-//       </Dropdown.Toggle>
-
-//       {/* <Dropdown.Menu>
-//         <Dropdown.Item onClick={() => handleCategorySelect({ name: 'All Categories' })}>
-//           All Categories
-//         </Dropdown.Item>
-
-//         {categories.map((category) => (
-//           <Dropdown.Item key={category.id} onClick={() => handleCategorySelect(category)}>
-//             {category.name}
-//           </Dropdown.Item>
-//         ))}
-//       </Dropdown.Menu>
-//     </Dropdown>
-//   );
-// };
-
-// export default DropdownCategory; */}

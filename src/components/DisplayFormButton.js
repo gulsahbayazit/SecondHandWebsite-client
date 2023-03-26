@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 function DisplayFormButton({ product, user, fetchUpdatedUser }) {
@@ -38,7 +38,6 @@ function DisplayFormButton({ product, user, fetchUpdatedUser }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Do something with the buyer name
   };
 
   return (
@@ -82,23 +81,6 @@ function DisplayFormButton({ product, user, fetchUpdatedUser }) {
           </form>
         </div>
       )}
-
-      {/* {displayForm && (
-        <>
-          <label>
-            Buyer user name:
-            <input type="text" value={buyerName} onChange={handleInputChange} />
-          </label>
-          <button
-            onClick={() => handleSell(product._id, product.price)}
-            className="btn btn-danger"
-            type="submit"
-          >
-            Approve it!
-          </button>
-          {message && <p>{message}</p>}
-        </>
-      )} */}
     </div>
   );
 }
